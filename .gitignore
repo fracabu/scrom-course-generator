@@ -1,0 +1,73 @@
+# Moodle Agent Team - .gitignore
+
+# Temporary files
+temp/
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Output files (generated SCORM packages and backups)
+output/scorm/*.zip
+output/mbz/*.mbz
+
+# Media files (large files should not be in git)
+media/audio/*.m4a
+media/audio/*.mp3
+media/audio/*.wav
+media/audio/*.ogg
+media/audio/*.aac
+media/video/*.mp4
+media/video/*.webm
+media/video/*.mov
+media/video/*.avi
+media/video/*.mkv
+
+# Keep directory structure but ignore files
+!media/audio/.gitkeep
+!media/video/.gitkeep
+!output/scorm/.gitkeep
+!output/mbz/.gitkeep
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
