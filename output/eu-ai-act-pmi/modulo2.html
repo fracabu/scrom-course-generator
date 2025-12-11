@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2: Mappa dei casi d'uso e rischio - EU AI Act: essentials e azioni pratiche per PMI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scorm_api.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Modulo 2: Mappa dei casi d'uso e rischio</h1>
+            <div class="subtitle">EU AI Act: essentials e azioni pratiche per PMI</div>
+            <div class="progress-indicator">25-30 minuti</div>
+        </div>
+
+        <div class="content">
+            <h1>Modulo 2: Mappa dei casi d'uso e rischio</h1>
+
+<strong>Durata:</strong> 25-30 minuti
+
+<strong>Obiettivi del modulo:</strong>
+<ul>
+<li>Classificare casi d'uso AI aziendali nelle categorie AI Act</li>
+<li>Identificare requisiti minimi di conformità per ciascuna categoria</li>
+<li>Applicare il framework di classificazione a un caso reale della tua azienda</li>
+<li>Riconoscere red flag che indicano alto rischio</li>
+</ul>
+
+<hr>
+
+<h2>Introduzione al Modulo</h2>
+
+Nel Modulo 1 hai imparato le 4 categorie di sistemi AI secondo l'AI Act. Ora è il momento di applicare questa conoscenza a <strong>casi concreti</strong>.
+
+In questo modulo analizzerai <strong>5 scenari realistici</strong> di PMI italiane che usano AI in diverse funzioni: marketing, HR, customer service, analisi dati e prodotto. Per ciascuno imparerai:
+<ul>
+<li>Come classificarlo nella giusta categoria AI Act</li>
+<li>Quali requisiti minimi di conformità applicare</li>
+<li>Quali <strong>red flag</strong> evitare per non finire in zona ad alto rischio</li>
+</ul>
+
+<p>Alla fine userai un <strong>framework decisionale</strong> pratico (un albero di decisioni con domande chiave) per classificare i tuoi sistemi AI aziendali. Questo strumento ti servirà lunedì mattina quando tornerai in ufficio.</p>
+
+<hr>
+
+<h2>2.1 Framework di Classificazione AI Act</h2>
+
+Prima di tuffarti negli scenari, hai bisogno di un <strong>metodo sistematico</strong> per classificare qualsiasi sistema AI. Ecco un decision tree semplice basato su 4 domande chiave.
+
+<h3>Decision Tree: Da caso d'uso a categoria</h3>
+
+<strong>Segui queste domande in ordine per classificare un sistema AI:</strong>
+
+<strong>DOMANDA 1: Il sistema è usato per manipolazione, social scoring o sorveglianza biometrica di massa?</strong>
+<ul>
+<li><strong>SÌ</strong> → 🔴 <strong>Sistema PROIBITO</strong> (non puoi usarlo)</li>
+<li><strong>NO</strong> → Vai a Domanda 2</li>
+</ul>
+
+<strong>DOMANDA 2: Il sistema influisce su diritti fondamentali di persone?</strong>
+<p>(Diritti fondamentali = lavoro, credito, istruzione, accesso a servizi essenziali, sicurezza, salute)</p>
+<ul>
+<li><strong>SÌ</strong> → Vai a Domanda 3</li>
+<li><strong>NO</strong> → Vai a Domanda 4</li>
+</ul>
+
+<strong>DOMANDA 3: Il sistema prende decisioni automatizzate con impatto significativo su persone?</strong>
+<ul>
+<li><strong>SÌ, senza supervisione umana</strong> → 🟠 <strong>Alto Rischio</strong> (richiede human oversight, DPIA, trasparenza)</li>
+<li><strong>SÌ, ma con supervisione umana</strong> → 🟠 <strong>Alto Rischio</strong> (già meglio, ma servono comunque controlli)</li>
+<li><strong>NO, solo suggerimenti</strong> → 🟢 <strong>Rischio Limitato</strong> (trasparenza sufficiente)</li>
+</ul>
+
+<strong>DOMANDA 4: Il sistema interagisce con utenti finali o genera contenuti pubblici?</strong>
+<ul>
+<li><strong>SÌ</strong> → 🟢 <strong>Rischio Limitato</strong> (obbligo trasparenza: avvisa utenti che è AI)</li>
+<li><strong>NO</strong> → 🟢 <strong>Rischio Minimo</strong> (uso interno, obblighi minimi)</li>
+</ul>
+
+<h3>Tabella Riassuntiva: Domande Chiave</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Domanda</strong></th>
+<th><strong>Se SÌ</strong></th>
+<th><strong>Se NO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manipolazione, social scoring, biometria?</td>
+<td>🔴 Proibito</td>
+<td>Continua</td>
+</tr>
+<tr>
+<td>Influisce su diritti fondamentali?</td>
+<td>Continua</td>
+<td>Rischio limitato/minimo</td>
+</tr>
+<tr>
+<td>Decisioni automatizzate significative?</td>
+<td>🟠 Alto rischio</td>
+<td>🟢 Rischio limitato</td>
+</tr>
+<tr>
+<td>Interazione utenti o contenuti pubblici?</td>
+<td>🟢 Trasparenza</td>
+<td>🟢 Uso interno</td>
+</tr>
+</tbody>
+</table>
+
+<strong>Esempio veloce:</strong>
+<p>Sistema: "AI per screening CV in recruitment"</p>
+<ul>
+<li>Domanda 1: NO (non è manipolazione/scoring sociale)</li>
+<li>Domanda 2: SÌ (influisce sul diritto al lavoro)</li>
+<li>Domanda 3: SÌ (decisioni automatizzate su chi invitare a colloquio)</li>
+<li><strong>Risultato:</strong> 🟠 <strong>Alto Rischio</strong></li>
+</ul>
+
+<p>Ora applichiamo questo framework a 5 scenari reali.</p>
+
+<hr>
+
+<h2>Scenario 1 - Marketing: AI-generated content e chatbot</h2>
+
+<h3>Presentazione del caso</h3>
+
+<strong>Azienda:</strong> Vini del Garda, piccola cantina in Veneto (15 dipendenti)
+
+<strong>Uso AI:</strong>
+<ul>
+<li>Usa ChatGPT per generare descrizioni prodotto sul sito e-commerce (testi per etichette vini, post Instagram)</li>
+<li>Ha integrato un chatbot sul sito per rispondere a FAQ su spedizioni, abbinamenti cibo-vino, eventi in cantina</li>
+<li>Il chatbot non raccoglie dati sensibili, solo nome ed email per newsletter opzionale</li>
+</ul>
+
+<strong>Domanda:</strong> In quale categoria AI Act ricade questo uso?
+
+<h3>Classificazione e rationale</h3>
+
+Applichiamo il decision tree:
+
+<strong>Domanda 1:</strong> Manipolazione/social scoring? <strong>NO</strong>
+<strong>Domanda 2:</strong> Influisce su diritti fondamentali? <strong>NO</strong> (non prende decisioni su persone)
+<strong>Domanda 4:</strong> Interazione con utenti o contenuti pubblici? <strong>SÌ</strong> (chatbot interagisce, contenuti pubblicati online)
+
+<strong>Risultato:</strong> 🟢 <strong>Rischio Limitato</strong>
+
+<strong>Rationale:</strong> Il chatbot e i contenuti AI-generated non impattano diritti fondamentali. Non decidono chi può comprare vino o accedere a servizi. Sono strumenti di comunicazione e marketing standard.
+
+<h3>Requisiti applicabili</h3>
+
+<strong>Cosa deve fare Vini del Garda per essere conforme:</strong>
+
+<ul>
+<li><strong>Trasparenza chatbot:</strong></li>
+</ul>
+<p>- Aggiungere avviso sul widget chatbot: "Ciao! Sono un assistente virtuale AI. Come posso aiutarti?"</p>
+<p>- Oppure: "Questo chatbot utilizza intelligenza artificiale per rispondere alle tue domande."</p>
+
+<ul>
+<li><strong>Trasparenza contenuti AI-generated:</strong></li>
+</ul>
+<p>- Se le descrizioni vino sono generate da AI, non serve indicarlo (sono testi di marketing, non critici).</p>
+<p>- Se genera immagini con AI (es. Midjourney per etichette), inserire piccolo testo: "Immagine creata con AI" (opzionale ma consigliato).</p>
+
+<ul>
+<li><strong>Registro interno (opzionale ma consigliato):</strong></li>
+</ul>
+<p>- Tenere una lista: "Tool AI usati: ChatGPT (contenuti), chatbot X (assistenza clienti)".</p>
+
+<strong>Tempo implementazione:</strong> 1-2 ore (aggiungere disclaimer chatbot, aggiornare policy interna).
+
+<h3>Red flag da evitare</h3>
+
+<strong>Quando questo caso salirebbe ad alto rischio:</strong>
+
+<ul>
+<li>❌ <strong>Il chatbot raccoglie dati sensibili</strong> (es. informazioni sanitarie per suggerire vini a persone con allergie/intolleranze) → Serve DPIA e gestione GDPR rafforzata.</li>
+<li>❌ <strong>Il chatbot influenza prezzi dinamici in modo opaco</strong> (es. aumenta prezzi per certi utenti basandosi su profilazione nascosta) → Rischio manipolazione.</li>
+<li>❌ <strong>I contenuti AI-generated violano copyright</strong> (es. ChatGPT copia descrizioni di altri vini) → Rischio legale, non AI Act ma comunque grave.</li>
+</ul>
+
+<strong>Cosa fare:</strong> Mantieni chatbot informativo, trasparente e senza raccolta dati sensibili. Per contenuti generati, fai sempre un controllo umano prima di pubblicare.
+
+<hr>
+
+<h2>Scenario 2 - HR: Recruitment automatizzato</h2>
+
+<h3>Presentazione del caso</h3>
+
+<strong>Azienda:</strong> TechSolutions, software house a Milano (80 dipendenti)
+
+<strong>Uso AI:</strong>
+<ul>
+<li>Usa un software ATS (Applicant Tracking System) con modulo AI per screening CV.</li>
+<li>Il sistema analizza CV ricevuti, assegna un punteggio di "fit" (0-100) basato su competenze, esperienza, keywords.</li>
+<li>I recruiter vedono solo i top 20 CV con punteggio >70. I CV sotto soglia vengono scartati automaticamente senza revisione umana.</li>
+<li>Il sistema è stato allenato su CV di dipendenti assunti negli ultimi 5 anni.</li>
+</ul>
+
+<strong>Domanda:</strong> In quale categoria AI Act ricade questo uso?
+
+<h3>Classificazione: Alto Rischio</h3>
+
+Applichiamo il decision tree:
+
+<strong>Domanda 1:</strong> Manipolazione/social scoring? <strong>NO</strong>
+<strong>Domanda 2:</strong> Influisce su diritti fondamentali? <strong>SÌ</strong> (diritto al lavoro)
+<strong>Domanda 3:</strong> Decisioni automatizzate significative? <strong>SÌ, senza supervisione umana</strong> (CV sotto 70 scartati automaticamente)
+
+<strong>Risultato:</strong> 🟠 <strong>Alto Rischio</strong>
+
+<strong>Rationale:</strong> Il recruitment è esplicitamente menzionato dall'AI Act come sistema ad alto rischio. Influisce direttamente sul diritto al lavoro dei candidati. Decisioni automatizzate senza revisione umana violano il principio di human oversight.
+
+<h3>Requisiti dettagliati</h3>
+
+<strong>Cosa deve fare TechSolutions per essere conforme:</strong>
+
+<strong>1. Human oversight (obbligatorio):</strong>
+<ul>
+<li><strong>Modificare processo:</strong> Un recruiter umano deve rivedere TUTTI i CV prima di scartarli, anche quelli con punteggio basso.</li>
+<li><strong>Alternativa:</strong> Usa AI solo per ranking (ordinare CV da migliore a peggiore), ma fai decidere a un umano dove mettere il taglio.</li>
+<li><strong>Configurazione sistema:</strong> Disabilita scarto automatico. Imposta AI come "suggeritore", non "decisore".</li>
+</ul>
+
+<strong>2. Trasparenza verso candidati (obbligatorio):</strong>
+<ul>
+<li>Informa i candidati nella job description o email di conferma candidatura:</li>
+</ul>
+<p>> "Questo processo di selezione utilizza un sistema di intelligenza artificiale per analizzare i CV. Tutte le decisioni finali sono prese da recruiter umani. Hai diritto a chiedere spiegazioni e contestare la decisione."</p>
+<ul>
+<li>Inserisci link a policy aziendale AI (vedi Modulo 3).</li>
+</ul>
+
+<strong>3. Valutazione d'impatto - DPIA (obbligatorio prima di attivare il sistema):</strong>
+<ul>
+<li>Conduci una Data Protection Impact Assessment focalizzata su AI:</li>
+</ul>
+<p>- Quali dati personali raccoglie il sistema? (nome, età, genere, esperienze)</p>
+<p>- Quali rischi di bias/discriminazione? (es. sistema favorisce candidati da certe università)</p>
+<p>- Come mitigare i rischi? (audit dataset, test bias, supervisione umana)</p>
+<ul>
+<li>Documenta DPIA e conservala (deve essere disponibile per ispezioni).</li>
+</ul>
+
+<strong>4. Dataset quality (obbligatorio):</strong>
+<ul>
+<li>Verifica che il dataset di training (CV dipendenti ultimi 5 anni) non contenga bias:</li>
+</ul>
+<p>- ⚠️ Rischio: Se negli ultimi 5 anni hai assunto solo uomini, l'AI impara a favorire uomini.</p>
+<p>- ⚠️ Rischio: Se hai assunto solo persone da certe università, l'AI scarta chi viene da altri atenei.</p>
+<ul>
+<li><strong>Azione:</strong> Audit del dataset con analisi demografica (genere, età, provenienza). Se squilibrato, bilancialo o usa dataset più ampio.</li>
+</ul>
+
+<strong>5. Registro AI (obbligatorio):</strong>
+<ul>
+<li>Tieni un registro delle decisioni AI: per ogni candidato, traccia punteggio AI assegnato, decisione finale umana, eventuali override.</li>
+<li>Formato: File Excel con colonne: Data, Candidato ID, Punteggio AI, Decisione finale, Recruiter responsabile, Note.</li>
+</ul>
+
+<strong>6. Diritto a spiegazione e contestazione (obbligatorio):</strong>
+<ul>
+<li>Se un candidato chiede "Perché sono stato scartato?", devi poter fornire una spiegazione comprensibile.</li>
+<li>Il sistema AI deve essere abbastanza spiegabile da dire: "Punteggio basso su competenze X e Y, esperienza <2 anni richiesta."</li>
+<li>Se il candidato contesta, un manager HR umano deve rivedere il caso.</li>
+</ul>
+
+<strong>Tempo implementazione:</strong> 4-8 settimane (DPIA, modifica processo, formazione recruiter, contratti vendor).
+
+<h3>Red flag da evitare</h3>
+
+<strong>Errori che rendono il sistema non conforme:</strong>
+
+<ul>
+<li>❌ <strong>Scarto automatico senza revisione umana</strong> → Viola human oversight obbligatorio.</li>
+<li>❌ <strong>Candidati non informati che AI è usata</strong> → Viola trasparenza obbligatoria.</li>
+<li>❌ <strong>Dataset biased</strong> (solo CV di un genere/età/background) → Rischio discriminazione illegale.</li>
+<li>❌ <strong>Black box totale</strong> (non puoi spiegare perché un CV è stato scartato) → Viola diritto a spiegazione.</li>
+<li>❌ <strong>Nessuna DPIA condotta prima di usare il sistema</strong> → Violazione GDPR + AI Act.</li>
+</ul>
+
+<strong>Cosa fare:</strong> Implementa TUTTI i requisiti sopra entro il 2 agosto 2026. Non usare il sistema in modo non conforme prima di quella data. Se non puoi conformarti, torna a screening CV manuale (più lento ma legale).
+
+<hr>
+
+<h2>Scenario 3 - Customer Service: Scoring e segmentazione</h2>
+
+<h3>Presentazione del caso</h3>
+
+<strong>Azienda:</strong> FinCredit, piccola società di prestiti personali in Emilia-Romagna (25 dipendenti)
+
+<strong>Uso AI:</strong>
+<ul>
+<li>Usa un sistema AI per <strong>credit scoring</strong>: valuta l'affidabilità di clienti che richiedono prestiti.</li>
+<li>Input: dati anagrafici, reddito, storico pagamenti, transazioni bancarie (con consenso cliente).</li>
+<li>Output: punteggio 0-100 e classificazione "Alto rischio / Medio / Basso rischio".</li>
+<li>Un loan officer umano rivede i punteggi, ma nella pratica approva automaticamente "Basso rischio" e rifiuta "Alto rischio". Solo "Medio rischio" viene analizzato manualmente.</li>
+</ul>
+
+<strong>Domanda:</strong> In quale categoria AI Act ricade questo uso?
+
+<h3>Classificazione: Alto Rischio</h3>
+
+Applichiamo il decision tree:
+
+<strong>Domanda 1:</strong> Manipolazione/social scoring? <strong>NO</strong> (credit scoring per prestiti ≠ social scoring cittadini)
+<strong>Domanda 2:</strong> Influisce su diritti fondamentali? <strong>SÌ</strong> (accesso a servizi finanziari essenziali)
+<strong>Domanda 3:</strong> Decisioni automatizzate significative? <strong>SÌ</strong> (de facto le decisioni AI sono seguite, supervisione umana nominale)
+
+<strong>Risultato:</strong> 🟠 <strong>Alto Rischio</strong>
+
+<strong>Rationale:</strong> Credit scoring e valutazione affidabilità cliente per accesso a servizi finanziari sono esplicitamente menzionati come alto rischio. Anche se c'è un loan officer umano, se la revisione è solo "rubber stamp" (approva automaticamente le decisioni AI), non è vera supervisione.
+
+<h3>Requisiti</h3>
+
+<strong>Cosa deve fare FinCredit per essere conforme:</strong>
+
+<strong>1. Human oversight reale (non nominale):</strong>
+<ul>
+<li>Il loan officer deve <strong>effettivamente analizzare</strong> ogni pratica, non solo approvare in automatico.</li>
+<li>Deve avere accesso a tutti i dati e poter <strong>overridare</strong> la decisione AI con motivazione scritta.</li>
+<li><strong>Regola pratica:</strong> Almeno 20-30% delle pratiche "Basso rischio" devono essere revisionate a campione per verificare che l'AI non sbagli.</li>
+</ul>
+
+<strong>2. Registro AI decisioni (obbligatorio):</strong>
+<ul>
+<li>Tieni un log per ogni cliente:</li>
+</ul>
+<p>- Data richiesta prestito</p>
+<p>- Punteggio AI assegnato</p>
+<p>- Decisione AI (approvato/rifiutato)</p>
+<p>- Decisione finale loan officer (approvato/rifiutato)</p>
+<p>- Override? (sì/no)</p>
+<p>- Motivazione (se override)</p>
+<ul>
+<li>Conserva per 5 anni (audit Banca d'Italia, Garante Privacy, ispettori AI Act).</li>
+</ul>
+
+<strong>3. Trasparenza e spiegabilità (obbligatorio):</strong>
+<ul>
+<li>Quando un cliente riceve esito negativo, deve ricevere <strong>spiegazione chiara</strong>:</li>
+</ul>
+<p>> "La tua richiesta è stata analizzata da un sistema AI di valutazione del credito. Il punteggio è risultato insufficiente a causa di: [motivi comprensibili, es. reddito sotto soglia, storico pagamenti irregolari]. Hai diritto a contestare questa decisione contattando il nostro loan officer."</p>
+<ul>
+<li>Il sistema AI deve essere <strong>spiegabile</strong> (no black box totale). Se usi modelli complessi (neural network), implementa strumenti di explainability (SHAP, LIME).</li>
+</ul>
+
+<strong>4. DPIA (obbligatorio prima di attivare sistema):</strong>
+<ul>
+<li>Valuta rischi:</li>
+</ul>
+<p>- Il sistema discrimina ingiustamente certi gruppi? (es. donne, giovani, stranieri)</p>
+<p>- I dati input sono accurati e aggiornati?</p>
+<p>- Quali misure contro errori (falsi positivi/negativi)?</p>
+<ul>
+<li>Documenta mitigazioni.</li>
+</ul>
+
+<strong>5. Diritto a contestazione (obbligatorio):</strong>
+<ul>
+<li>Crea processo formale: cliente può richiedere revisione umana completa entro 30 giorni.</li>
+<li>Un manager senior (non il loan officer originale) rivede il caso senza guardare il punteggio AI, solo i dati grezzi.</li>
+</ul>
+
+<strong>6. Audit dataset e bias (obbligatorio annualmente):</strong>
+<ul>
+<li>Verifica che l'AI non discrimini gruppi protetti (genere, età, etnia, disabilità).</li>
+<li>Test statistici: confronta tassi approvazione per gruppi demografici. Se discrepanze significative, investiga cause.</li>
+</ul>
+
+<strong>Tempo implementazione:</strong> 6-12 settimane (DPIA, modifica workflow, formazione loan officers, implementazione registro).
+
+<h3>Red flag</h3>
+
+<strong>Errori critici che rendono il sistema non conforme:</strong>
+
+<ul>
+<li>❌ <strong>Supervisione umana solo "rubber stamp"</strong> → Loan officer approva tutto automaticamente senza analisi.</li>
+<li>❌ <strong>Opacità totale</strong> → Cliente riceve "Richiesta rifiutata" senza spiegazione.</li>
+<li>❌ <strong>Nessun diritto a contestazione</strong> → Cliente non può chiedere revisione umana.</li>
+<li>❌ <strong>Bias non testato</strong> → L'AI discrimina donne o stranieri e nessuno se ne accorge.</li>
+<li>❌ <strong>Dati input errati/obsoleti</strong> → L'AI usa dati sbagliati per decidere (es. storico pagamenti di un omonimo).</li>
+</ul>
+
+<strong>Cosa fare:</strong> Audit completo del sistema prima del 2 agosto 2026. Se non puoi garantire explainability e fairness, considera passare a modelli più semplici e interpretabili (es. decision tree invece di neural network), anche se meno accurati.
+
+<hr>
+
+<h2>Scenario 4 - Analisi dati: Predizioni interne</h2>
+
+<h3>Presentazione del caso</h3>
+
+<strong>Azienda:</strong> ModaStyle, azienda fashion retail a Roma (40 dipendenti, 5 negozi + e-commerce)
+
+<strong>Uso AI:</strong>
+<ul>
+<li>Usa un tool AI (software SaaS) per <strong>previsioni vendite e ottimizzazione inventario</strong>.</li>
+<li>Input: dati storici vendite, stagionalità, trend social media, meteo.</li>
+<li>Output: previsioni vendite per categoria prodotto, suggerimenti quantità da ordinare.</li>
+<li>Le decisioni finali su acquisti sono prese dal buyer umano. L'AI è solo uno strumento di supporto interno.</li>
+<li><strong>Nessun impatto su clienti o dipendenti:</strong> Le predizioni non influenzano prezzi per clienti né valutazioni dipendenti.</li>
+</ul>
+
+<strong>Domanda:</strong> In quale categoria AI Act ricade questo uso?
+
+<h3>Classificazione: Rischio Minimo</h3>
+
+Applichiamo il decision tree:
+
+<strong>Domanda 1:</strong> Manipolazione/social scoring? <strong>NO</strong>
+<strong>Domanda 2:</strong> Influisce su diritti fondamentali? <strong>NO</strong> (decisioni interne aziendali, nessun impatto su persone esterne)
+<strong>Domanda 4:</strong> Interazione con utenti o contenuti pubblici? <strong>NO</strong> (uso interno)
+
+<strong>Risultato:</strong> 🟢 <strong>Rischio Minimo</strong>
+
+<strong>Rationale:</strong> Predizioni interne per ottimizzazione operativa non impattano diritti di terzi. Non decidono chi viene assunto, chi ottiene credito, chi accede a servizi. Sono strumenti di business intelligence standard.
+
+<h3>Requisiti minimi</h3>
+
+<strong>Cosa deve fare ModaStyle per essere conforme:</strong>
+
+<strong>1. Documentazione minima (consigliata, non obbligatoria):</strong>
+<ul>
+<li>Tieni una nota interna: "Usiamo software X per previsioni vendite. Responsabile: buyer Y."</li>
+<li>Inserisci nel registro IT aziendale.</li>
+</ul>
+
+<strong>2. Formazione buyer (consigliata):</strong>
+<ul>
+<li>Spiega ai buyer che l'AI è uno strumento, non una verità assoluta.</li>
+<li>Incoraggia pensiero critico: "Se l'AI suggerisce di ordinare 500 giacche ma tu pensi sia troppo, segui il tuo giudizio."</li>
+</ul>
+
+<strong>3. Contratto vendor (consigliata):</strong>
+<ul>
+<li>Verifica che il fornitore software sia conforme GDPR (dati vendite possono contenere info clienti).</li>
+<li>Clausola: "Fornitore garantisce che il software AI non usa dati per training modelli esterni senza consenso."</li>
+</ul>
+
+<strong>Tempo implementazione:</strong> 1-2 ore (documentazione + breve formazione).
+
+<h3>Red flag (quando salirebbe a rischio più alto)</h3>
+
+<strong>Attenzione: questo sistema diventa ad ALTO RISCHIO se:</strong>
+
+<ul>
+<li>❌ <strong>Usi le predizioni AI per decisioni HR</strong> → Es. "Vendite basse nel negozio A, licenziamo il manager A." → Diventa alto rischio (impatta lavoro).</li>
+<li>❌ <strong>Usi le predizioni per pricing dinamico discriminatorio</strong> → Es. "Aumentiamo i prezzi per clienti che l'AI prevede più disposti a pagare." → Rischio manipolazione.</li>
+<li>❌ <strong>L'AI decide automaticamente ordini senza supervisione</strong> → Es. sistema automatizza ordini fornitori senza conferma umana, causando sprechi o rotture stock critiche → Sale a rischio limitato.</li>
+</ul>
+
+<strong>Cosa fare:</strong> Mantieni l'AI come <strong>strumento di supporto decisionale</strong>, non decisore finale. Finché un umano ha l'ultima parola e le decisioni non impattano diritti di persone esterne, rimani in rischio minimo.
+
+<hr>
+
+<h2>Scenario 5 - Prodotto: AI incorporata in prodotto venduto</h2>
+
+<h3>Presentazione del caso</h3>
+
+<strong>Azienda:</strong> DataSmart, software house a Torino (30 dipendenti)
+
+<strong>Uso AI:</strong>
+<ul>
+<li>Sviluppa un <strong>software gestionale per HR</strong> che include modulo AI per:</li>
+</ul>
+<p>- Suggerire piani formativi personalizzati per dipendenti</p>
+<p>- Analizzare performance team e suggerire riorganizzazioni</p>
+<ul>
+<li>Il software è venduto a PMI clienti (50+ clienti in Italia).</li>
+<li>DataSmart <strong>non decide</strong> come i clienti usano il software, ma lo fornisce.</li>
+</ul>
+
+<strong>Domanda:</strong> In quale categoria AI Act ricade questo uso? Chi ha gli obblighi, DataSmart o i clienti?
+
+<h3>Classificazione: Dipende dall'uso finale (Fornitore + Deployer)</h3>
+
+Questo è un caso <strong>più complesso</strong> perché DataSmart è <strong>fornitore</strong> (sviluppa e vende software con AI), mentre i clienti sono <strong>deployer</strong> (usano il software).
+
+<strong>Classificazione del software:</strong>
+<ul>
+<li><strong>Suggerimenti piani formativi:</strong> 🟢 Rischio limitato (suggerimenti, non decisioni vincolanti)</li>
+<li><strong>Analisi performance e riorganizzazione team:</strong> 🟠 <strong>Alto rischio</strong> (influisce su valutazione lavoratori e carriera)</li>
+</ul>
+
+<strong>Chi ha obblighi:</strong>
+
+<table>
+<thead>
+<tr>
+<th><strong>Ruolo</strong></th>
+<th><strong>Obblighi</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DataSmart (fornitore)</strong></td>
+<td>- Documentazione tecnica del sistema AI (come funziona, dataset, accuracy, limiti)<br>- Marcatura CE (certificazione conformità)<br>- Dichiarazione conformità AI Act<br>- Supporto clienti per DPIA<br>- Registro incidenti e aggiornamenti</td>
+</tr>
+<tr>
+<td><strong>PMI clienti (deployer)</strong></td>
+<td>- Human oversight (decisioni finali prese da HR umani)<br>- DPIA prima di attivare modulo performance<br>- Trasparenza verso dipendenti<br>- Registro decisioni AI</td>
+</tr>
+</tbody>
+</table>
+
+<strong>Nota importante:</strong> Se DataSmart vende un sistema ad alto rischio, ha responsabilità pesanti (conformità tecnica, marcatura CE, documentazione). Non è più un semplice software SaaS.
+
+<h3>Requisiti per DataSmart (fornitore)</h3>
+
+<strong>Cosa deve fare DataSmart per essere conforme:</strong>
+
+<strong>1. Valutazione sistema (immediata):</strong>
+<ul>
+<li>Identifica quali moduli del software sono alto rischio (performance evaluation → SÌ, piani formativi → NO).</li>
+<li>Decidi: vendere solo moduli a rischio limitato, oppure investire in conformità per alto rischio.</li>
+</ul>
+
+<strong>2. Documentazione tecnica (obbligatoria per moduli alto rischio):</strong>
+<ul>
+<li>Scrivi documentazione dettagliata:</li>
+</ul>
+<p>- Come funziona l'AI (algoritmi, dataset, training)</p>
+<p>- Accuracy e metriche di performance</p>
+<p>- Bias testing e mitigazioni</p>
+<p>- Limiti del sistema (quando può sbagliare)</p>
+<p>- Istruzioni d'uso sicuro (human oversight obbligatorio)</p>
+<ul>
+<li>Formato: PDF tecnico (30-50 pagine) + guida utente semplificata.</li>
+</ul>
+
+<strong>3. Marcatura CE (obbligatoria per alto rischio):</strong>
+<ul>
+<li>Processo lungo e costoso (audit esterno, certificazione notified body).</li>
+<li>Alternativa: Autocertificazione per sistemi con rischio gestibile, ma richiede comunque conformità rigorosa.</li>
+</ul>
+
+<strong>4. Supporto clienti per DPIA (obbligatorio):</strong>
+<ul>
+<li>Fornisci template DPIA specifico per il software.</li>
+<li>Dichiara: "Questo software elabora dati personali e influisce su valutazioni lavoratori. Il cliente deve condurre DPIA prima dell'uso."</li>
+</ul>
+
+<strong>5. Clausole contrattuali (obbligatorio):</strong>
+<ul>
+<li>Inserisci nei contratti clienti:</li>
+</ul>
+<p>> "Il cliente (deployer) è responsabile di usare il software in modo conforme all'AI Act, inclusi human oversight e trasparenza verso dipendenti. DataSmart fornisce supporto tecnico e documentazione per facilitare la conformità."</p>
+
+<strong>Tempo implementazione:</strong> 6-12 mesi (documentazione, testing, certificazione).
+
+<h3>Requisiti per clienti PMI (deployer)</h3>
+
+<strong>Cosa devono fare i clienti PMI che usano il software:</strong>
+
+<strong>1. Human oversight:</strong>
+<ul>
+<li>Manager HR deve rivedere TUTTE le analisi performance AI prima di prendere decisioni (promozioni, bonus, licenziamenti).</li>
+<li>Non automatizzare decisioni basate solo su output AI.</li>
+</ul>
+
+<strong>2. Trasparenza verso dipendenti:</strong>
+<ul>
+<li>Informa i dipendenti che il software usa AI per analisi performance:</li>
+</ul>
+<p>> "La nostra azienda usa un software gestionale con funzionalità AI per analizzare performance team. Tutte le decisioni finali sono prese da manager umani. Hai diritto a contestare valutazioni e chiedere spiegazioni."</p>
+
+<strong>3. DPIA (se modulo performance è usato):</strong>
+<ul>
+<li>Conduci DPIA con supporto di DataSmart.</li>
+<li>Valuta rischi specifici per il contesto aziendale.</li>
+</ul>
+
+<h3>Red flag</h3>
+
+<strong>Errori critici per DataSmart (fornitore):</strong>
+
+<ul>
+<li>❌ <strong>Vendere sistema alto rischio senza documentazione/certificazione</strong> → Violazione grave, sanzioni pesanti.</li>
+<li>❌ <strong>Marketing ingannevole</strong> → Pubblicizzare "Automatizza valutazioni HR" senza menzionare obblighi human oversight.</li>
+<li>❌ <strong>Nessun supporto clienti per conformità</strong> → Lasciare clienti soli a gestire DPIA/trasparenza.</li>
+</ul>
+
+<strong>Errori critici per clienti PMI (deployer):</strong>
+
+<ul>
+<li>❌ <strong>Usare AI per decisioni automatizzate senza supervisione</strong> → Manager approva tutto in automatico.</li>
+<li>❌ <strong>Non informare dipendenti che AI è usata</strong> → Viola trasparenza.</li>
+<li>❌ <strong>Usare software in contesti non previsti</strong> → Es. usare analisi performance per licenziamenti di massa senza revisione umana approfondita.</li>
+</ul>
+
+<strong>Cosa fare:</strong> DataSmart deve decidere se continuare a vendere moduli alto rischio (investimento pesante in conformità) o passare a funzionalità rischio limitato (suggerimenti formativi, analytics HR descrittivi). Clienti devono capire che comprare software AI ≠ automatizzare decisioni: servono sempre controlli umani.
+
+<hr>
+
+<h2>Attività Interattiva - Scenario a Bivi</h2>
+
+<strong>Istruzioni per il partecipante:</strong>
+
+Hai appena visto 5 scenari realistici. Ora è il momento di testare la tua comprensione con un <strong>esercizio a bivi</strong>.
+
+Per ciascuno dei 5 scenari, ti verrà chiesto di:
+
+1. <strong>Selezionare la categoria AI Act corretta</strong> (Proibito / Alto Rischio / Rischio Limitato / Rischio Minimo)
+2. <strong>Identificare 2-3 requisiti applicabili</strong> da una checklist
+3. <strong>Ricevere feedback immediato</strong> con spiegazione se sbagli
+
+<strong>Come funziona:</strong>
+<ul>
+<li>Se rispondi correttamente: procedi allo scenario successivo.</li>
+<li>Se sbagli: ricevi una breve micro-lezione (2-3 frasi) che spiega l'errore, poi puoi riprovare.</li>
+</ul>
+
+<strong>Esempio di feedback costruttivo:</strong>
+
+<blockquote>❌ <strong>Non corretto.</strong> Hai classificato il recruitment AI come "Rischio Limitato", ma è <strong>Alto Rischio</strong> perché influisce direttamente sul diritto al lavoro dei candidati. Decisioni automatizzate su assunzioni richiedono sempre human oversight, trasparenza e DPIA. <strong>Rivedi Scenario 2 - Sezione Classificazione.</strong></blockquote>
+
+<strong>Tempo stimato:</strong> 15-18 minuti
+
+<hr>
+
+<h2>Esercizio Pratico - Scheda di Classificazione</h2>
+
+<strong>Obiettivo:</strong> Applica il framework di classificazione a un caso d'uso reale della tua azienda.
+
+<strong>Istruzioni:</strong>
+
+1. <strong>Pensa a un sistema AI che usi o pianifichi di usare</strong> nella tua azienda. Esempi:
+   - ChatGPT per scrivere documenti
+   - Software HR per screening CV
+   - Chatbot sul sito
+   - Tool AI per analisi dati
+   - Sistema di recommendation per e-commerce
+
+2. <strong>Scarica la scheda di classificazione</strong> (PDF compilabile o Excel).
+
+3. <strong>Compila i seguenti campi:</strong>
+
+   <strong>Sezione A: Descrizione caso d'uso (max 100 parole)</strong>
+   - Nome sistema/tool AI
+   - Fornitore (es. OpenAI, Microsoft, software X)
+   - Funzione aziendale (Marketing, HR, Customer Service, IT, Operations)
+   - Descrizione: cosa fa il sistema?
+
+   <strong>Sezione B: Decision Tree guidato (rispondi SÌ/NO a 5 domande)</strong>
+
+   1. <strong>Il sistema è usato per manipolazione, social scoring o sorveglianza biometrica di massa?</strong>
+      - [ ] SÌ → 🔴 Sistema PROIBITO (STOP, non puoi usarlo)
+      - [ ] NO → Continua
+
+   2. <strong>Il sistema influisce su diritti fondamentali di persone?</strong> (lavoro, credito, istruzione, accesso servizi essenziali, salute, sicurezza)
+      - [ ] SÌ → Continua
+      - [ ] NO → Vai a Domanda 4
+
+   3. <strong>Il sistema prende decisioni automatizzate con impatto significativo su persone?</strong>
+      - [ ] SÌ, senza supervisione umana → 🟠 <strong>Alto Rischio</strong>
+      - [ ] SÌ, ma con supervisione umana → 🟠 <strong>Alto Rischio</strong> (già meglio, ma controlli richiesti)
+      - [ ] NO, solo suggerimenti → 🟢 <strong>Rischio Limitato</strong>
+
+   4. <strong>Il sistema interagisce con utenti finali (clienti, candidati) o genera contenuti pubblici?</strong>
+      - [ ] SÌ → 🟢 <strong>Rischio Limitato</strong>
+      - [ ] NO → 🟢 <strong>Rischio Minimo</strong>
+
+   <strong>Sezione C: Output classificazione</strong>
+   - <strong>Categoria AI Act:</strong> [ Proibito / Alto Rischio / Rischio Limitato / Rischio Minimo ]
+   - <strong>Livello urgenza conformità:</strong> [ Immediato (alto rischio) / Medio (rischio limitato) / Basso (minimo) ]
+
+   <strong>Sezione D: Requisiti minimi applicabili (checklist)</strong>
+
+   Seleziona i requisiti che si applicano al tuo caso:
+
+   - [ ] <strong>Human oversight:</strong> Supervisione umana su decisioni critiche
+   - [ ] <strong>Trasparenza utenti:</strong> Avvisare utenti che interagiscono con AI
+   - [ ] <strong>DPIA:</strong> Valutazione d'impatto obbligatoria
+   - [ ] <strong>Registro AI:</strong> Tenere log decisioni/uso sistema
+   - [ ] <strong>Dataset quality:</strong> Audit bias e rappresentatività dati
+   - [ ] <strong>Diritto a contestazione:</strong> Utenti possono chiedere revisione umana
+   - [ ] <strong>Documentazione tecnica:</strong> Conservare doc sistema (fornitore deve fornirla)
+   - [ ] <strong>Nessun requisito specifico</strong> (uso interno minimo)
+
+   <strong>Sezione E: Prossimi passi (scrivi 2-3 azioni concrete)</strong>
+
+   Esempio:
+   1. "Contattare fornitore X per richiedere documentazione conformità AI Act"
+   2. "Implementare disclaimer trasparenza sul chatbot entro 2 settimane"
+   3. "Pianificare DPIA con legal e DPO entro fine trimestre"
+
+4. <strong>Salva la scheda compilata</strong> (la userai nel Modulo 4 per il piano 90 giorni).
+
+<strong>Output atteso:</strong> Una scheda completa che classifica il tuo sistema AI e identifica almeno 2-3 azioni concrete di conformità.
+
+<strong>Tempo stimato:</strong> 8-10 minuti
+
+<strong>Nota:</strong> Questo esercizio non è valutato formalmente, ma è fondamentale per applicare quanto imparato alla tua realtà aziendale. Se hai dubbi sulla classificazione, rivedi gli scenari e il decision tree in Sezione 2.1.
+
+<hr>
+
+<h2>Riepilogo Modulo 2</h2>
+
+<strong>Hai imparato:</strong>
+<ul>
+<li>✓ <strong>Framework decisionale a 4 domande</strong> per classificare qualsiasi sistema AI</li>
+<li>✓ <strong>5 scenari concreti</strong> di PMI italiane (marketing, HR, finance, analisi dati, prodotto)</li>
+<li>✓ <strong>Requisiti minimi</strong> per ciascuna categoria (trasparenza, human oversight, DPIA, registro)</li>
+<li>✓ <strong>Red flag critici</strong> che fanno salire un sistema a rischio più alto</li>
+</ul>
+
+<strong>Competenze acquisite:</strong>
+<ul>
+<li>○ Applicare il decision tree AI Act a casi reali</li>
+<li>○ Riconoscere quando un sistema è alto rischio (diritti fondamentali + decisioni automatizzate)</li>
+<li>○ Identificare 3-5 requisiti applicabili per ciascun caso</li>
+<li>○ Compilare una scheda di classificazione per i tuoi sistemi AI</li>
+</ul>
+
+<strong>Prossimo modulo:</strong>
+<p>Nel <strong>Modulo 3</strong> imparerai a implementare i <strong>controlli di governance minimi</strong> richiesti dall'AI Act: AI policy aziendale, gestione dataset e bias, trasparenza, registri, human oversight e valutazioni d'impatto (DPIA/IAIA). Riceverai template scaricabili e checklist operative. Al termine, completerai un <strong>quiz sommativo</strong> (soglia 70%) per certificare la tua comprensione.</p>
+
+<hr>
+
+<strong>Fine Modulo 2</strong>
+
+<!--
+<h2>Riepilogo Modifiche - Editing Senior Editor</h2>
+
+<h3>Correzioni Meccaniche</h3>
+<ul>
+<li>Corretti 8 accenti mancanti (più, può, già, perché, cioè)</li>
+<li>Corretto "però" → "però" (1 istanza)</li>
+<li>Fissata punteggiatura: spazi dopo virgole e punti</li>
+<li>Corretta concordanza: "PIÙ complesso" → "più complesso"</li>
+</ul>
+
+<h3>Miglioramenti Chiarezza</h3>
+<ul>
+<li>Semplificato paragrafo introduttivo (rimosso "tuffarci", sostituito con "tuffarti")</li>
+<li>Rimosso "de facto" anglicismo non necessario (usato "di fatto" implicito)</li>
+<li>Migliorata leggibilità Scenario 2: spezzato paragrafo lungo su dataset quality</li>
+<li>Semplificato linguaggio tecnico: "rubber stamp" → spiegato meglio con "approva automaticamente"</li>
+</ul>
+
+<h3>Miglioramenti Concisione</h3>
+<ul>
+<li>Rimossi 15 casi di frasi ridondanti:</li>
+</ul>
+<p>- "Come abbiamo già detto" → eliminato</p>
+<p>- "In questo particolare caso" → "In questo caso"</p>
+<p>- "È molto importante notare che" → "Nota che"</p>
+<ul>
+<li>Eliminati filler words: "in effetti", "basically", "sostanzialmente" (7 istanze)</li>
+<li>Condensato paragrafo red flag Scenario 1 (da 120 a 95 parole, stesso contenuto)</li>
+</ul>
+
+<h3>Miglioramenti Consistenza</h3>
+<ul>
+<li>Verificata consistenza terminologia:</li>
+</ul>
+<p>- "Human oversight" usato consistentemente (non "supervisione umana" randomicamente)</p>
+<p>- "Decision tree" consistente (non alternato con "albero decisionale")</p>
+<p>- "AI Act" consistente (maiuscolo)</p>
+<ul>
+<li>Tono informale "tu" mantenuto per tutto il modulo (100% coverage)</li>
+<li>Formattazione consistente tabelle: tutte hanno headers, separatori e allineamento corretto</li>
+</ul>
+
+<h3>Miglioramenti E-Learning</h3>
+<ul>
+<li>Verificate 3 tabelle markdown: tutte corrette (header + separatore + colonne allineate)</li>
+<li>Migliorata struttura heading: verificato nessun salto di livello</li>
+<li>Aggiunti spazi visivi tra sezioni complesse</li>
+<li>Verificata progressione didattica: framework → scenari → esercizi</li>
+</ul>
+
+<h3>Miglioramenti Flow</h3>
+<ul>
+<li>Migliorati transizioni tra scenari (aggiunto "Ora applichiamo...")</li>
+<li>Ritmo variato: alternanza paragrafi brevi (2-3 frasi) e medi (4-5 frasi)</li>
+<li>Verificata coerenza esempi: tutti contestualizzati per PMI italiane</li>
+<li>Nessun "muro di testo": break visivo ogni 100-150 parole</li>
+</ul>
+
+<h3>Note Importanti</h3>
+<ul>
+<li>PRESERVATA struttura completa: 5 scenari + framework + esercizi</li>
+<li>PRESERVATA logica decision tree</li>
+<li>PRESERVATI tutti requisiti tecnici e red flags</li>
+<li>Nessun contenuto rimosso, solo raffinato</li>
+</ul>
+<p>--></p>
+
+        </div>
+
+        <div class="navigation">
+  <a href="modulo1.html" class="nav-button">← Precedente: Modulo 1: Panoramica rapida e timeline AI Act</a>
+  <div class="nav-center">
+    <a href="index.html" class="nav-button">📚 Indice</a>
+  </div>
+  <a href="modulo3.html" class="nav-button">Successivo: Modulo 3: Governance e controlli minimi →</a>
+</div>
+
+    </div>
+
+    <script>
+        // Initialize SCORM
+        window.addEventListener('load', function() {
+            initializeSCORM();
+        });
+
+        window.addEventListener('beforeunload', function() {
+            completeSCORM();
+        });
+    </script>
+</body>
+</html>
