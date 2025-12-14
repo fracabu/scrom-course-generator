@@ -10,7 +10,9 @@ SCORM 1.2 course content generation system using a multi-agent workflow. Creates
 
 ```bash
 # Generate SCORM package from markdown content
-python scripts/scorm_generators/create_scorm_package.py
+# IMPORTANT: Run from the directory containing 'course-content-edited.md'
+cd content/[course-name]
+python ../../scripts/scorm_generators/create_scorm_package.py
 
 # Create audio SCORM package
 python scripts/scorm_generators/create_audio_scorm.py <audio_file> [title] [description]
@@ -18,8 +20,11 @@ python scripts/scorm_generators/create_audio_scorm.py <audio_file> [title] [desc
 # Create video SCORM package
 python scripts/scorm_generators/create_video_scorm.py <video_file> [title] [description]
 
-# Compress large video files (recommended CRF: 23)
+# Compress video (CRF 23 = high quality, CRF 28 = smaller file)
 ffmpeg -i input.mp4 -vcodec libx264 -crf 23 -preset medium -acodec aac -b:a 128k output.mp4
+
+# Compress audio to MP3
+ffmpeg -i input.wav -codec:a libmp3lame -b:a 128k output.mp3
 ```
 
 ## Directory Structure
@@ -27,12 +32,16 @@ ffmpeg -i input.mp4 -vcodec libx264 -crf 23 -preset medium -acodec aac -b:a 128k
 ```
 scripts/
 ├── scorm_generators/        # SCORM package creators (text, audio, video)
+│   ├── create_scorm_package.py   # Expects 'course-content-edited.md' in CWD
+│   ├── create_audio_scorm.py     # Standalone audio SCORM
+│   └── create_video_scorm.py     # Standalone video SCORM
 ├── content_generation/      # HTML page generation, content editing
 └── legacy/                  # Deprecated scripts (reference only)
 
 content/                     # Course content organized by course
-├── ai-principianti/         # Example: AI course for beginners
-└── sicurezza-lavoro/        # Example: Workplace safety course
+├── ai-principianti/         # AI for beginners (10 modules)
+├── sicurezza-lavoro/        # Workplace safety (D.Lgs. 81/08)
+└── eu-ai-act-pmi/           # EU AI Act for SMEs
 
 .claude/agents/              # Agent definition files
 output/                      # Generated SCORM packages (.zip)
@@ -59,10 +68,20 @@ The system uses five specialized agents invoked via Task tool with `subagent_typ
 
 ## SCORM Package Generation
 
-The `create_scorm_package.py` script expects a markdown file with modules prefixed by `# Modulo`. It:
+The `create_scorm_package.py` script reads `course-content-edited.md` from the current directory. It:
+- Splits content at `# Modulo X:` headers (each becomes a separate HTML page)
 - Converts markdown to styled HTML with navigation buttons
 - Creates `imsmanifest.xml` for SCORM 1.2 compliance
-- Packages everything into a .zip ready for LMS import
+- Outputs `scorm_package/` directory and a `.zip` file
+
+**Content file format:**
+```markdown
+# Modulo 1: Titolo Primo Modulo
+Content here...
+
+# Modulo 2: Titolo Secondo Modulo
+Content here...
+```
 
 **Audio SCORM:** Marks complete when audio finishes. Supports MP3, WAV, OGG, M4A, AAC.
 
